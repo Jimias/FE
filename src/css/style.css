@@ -12,7 +12,8 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --pink:rgb(184, 15, 117);
+  --pink: rgb(216, 133, 147);
+  --p-10: 10px;
 }
 
 * {
@@ -149,7 +150,7 @@ button.del {
 }
 
 form {
-  background-color: var(--pink);
+  background-color:  var(--pink);
   color: #ffffff;
   padding: 10px;
   margin-top: 25px;
@@ -169,6 +170,21 @@ input[type=text], input[type=password], input[type=email] {
 
 pre {
   background-color: aliceblue;
+}
+
+dialog {
+  top: 50%;
+  transform: translateY(-50%);
+}
+::backdrop {
+  background-image: linear-gradient(
+    45deg,
+    magenta,
+    rebeccapurple,
+    dodgerblue,
+    green
+  );
+  opacity: 0.75;
 }
 
 @media screen and (max-width: 800px) {

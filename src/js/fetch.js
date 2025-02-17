@@ -1,12 +1,11 @@
 /**
- 
-Fetches JSON data from APIs*
-@param {string} url - api endpoint url
-@param {Object} options - request options, metodit
-@returns {Object} response json data
-
-*/
-
+ * Fetches JSON data from APIs
+ *
+ * @param {string} url - api endpoint url
+ * @param {Object} options - request options, metodit GET default, POST, DELTE
+ *
+ * @returns {Object} response json data
+ */
 const fetchData = async (url, options = {}) => {
   try {
     const response = await fetch(url, options);
